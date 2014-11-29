@@ -10,5 +10,4 @@ pom.xml.asc
 /.nrepl-port
 feedback_library.iml
 system.properties
-Procfile
-/env
+
