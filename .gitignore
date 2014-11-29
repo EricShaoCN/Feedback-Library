@@ -9,3 +9,5 @@ pom.xml.asc
 /.idea
 /.nrepl-port
 feedback_library.iml
+system.properties
+Procfile
