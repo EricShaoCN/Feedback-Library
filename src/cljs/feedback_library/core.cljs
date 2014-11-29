@@ -1,6 +1,7 @@
 (ns feedback-library.core
   (:require [om.core :as om :include-macros true]
-            [om.dom :as dom :include-macros true]))
+            [om-tools.dom :as dom :include-macros true]
+            [om-tools.core :refer-macros [defcomponent]]))
 
 (defonce app-state (atom {:text "Hello Chestnut!"}))
 
@@ -10,6 +11,6 @@
       (reify
         om/IRender
         (render [_]
-          (dom/h1 nil (:text app)))))
+          (dom/h1 (:text app)))))
     app-state
     {:target (. js/document (getElementById "app"))}))
